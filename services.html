@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services | Luxe Studio — Premium Salon & Spa India</title>
+    <meta name="description"
+        content="Explore Luxe Studio's full range of premium salon & spa services: haircuts, colour, bridal makeup, skincare facials, nail art, and luxury spa treatments." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂</text></svg>" />
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-logo">Luxe <span>Studio</span></div>
+    </div>
+
+    <!-- Sticky CTA -->
+    <a href="booking.html" class="sticky-cta">
+        <button class="btn btn-gold">✦ Book Now</button>
+    </a>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header" style="background: var(--black);">
+        <a href="index.html" class="logo">
+            <span class="logo-name">Luxe Studio</span>
+            <span class="logo-tag">Premium Salon & Spa</span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html" style="color: var(--gold);">Services</a>
+            <a href="index.html#portfolio">Portfolio</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#testimonials">Reviews</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="tel:+919876543210" class="btn btn-outline" style="padding:10px 22px; font-size: 0.72rem;">📞 +91
+                98765 43210</a>
+            <a href="booking.html" class="btn btn-gold" style="padding:10px 22px; font-size: 0.72rem;">Book Now</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+        <span class="mobile-nav-close" id="mobileClose">✕</span>
+        <a href="index.html" onclick="closeMobileNav()">Home</a>
+        <a href="services.html" onclick="closeMobileNav()">Services</a>
+        <a href="index.html#portfolio" onclick="closeMobileNav()">Portfolio</a>
+        <a href="index.html#about" onclick="closeMobileNav()">About</a>
+        <a href="index.html#testimonials" onclick="closeMobileNav()">Reviews</a>
+        <a href="index.html#contact" onclick="closeMobileNav()">Locations</a>
+        <a href="booking.html" class="btn btn-gold" style="margin-top:12px;">Book Appointment</a>
+    </div>
+
+    <!-- ==================== SERVICES HERO ==================== -->
+    <section class="services-hero">
+        <div class="container">
+            <span class="section-label">All Services</span>
+            <h1>Our <em>Services</em></h1>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.6); margin-top: 16px;">Explore our complete
+                range of premium beauty & wellness services, each crafted for excellence.</p>
+        </div>
+    </section>
+
+    <!-- ==================== HAIR SERVICES ==================== -->
+    <section class="section-pad" style="background: var(--white);">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">For Your Hair</span>
+                <h2 class="section-title">Hair <em>Services</em></h2>
+            </div>
+            <div class="service-detail-grid" style="margin-top: 40px;">
+
+                <div class="service-detail-card reveal">
+                    <div class="service-detail-img">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80&fit=crop"
+                            alt="Hair cut and styling" loading="lazy" />
+                    </div>
+                    <div class="service-detail-body">
+                        <h3>Hair Cuts & Styling</h3>
+                        <p>Expert precision cuts for all hair types — pixie, bob, layers, and more. Followed by a
+                            professional blow-dry and styling session tailored to your look.</p>
+                        <div class="price-row">
+                            <span class="price-badge">₹ 1,200 – ₹ 3,500</span>
+                            <a href="booking.html" class="btn btn-gold"
+                                style="padding: 10px 20px; font-size: 0.72rem;">Book →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail-card reveal reveal-delay-1">
+                    <div class="service-detail-img">
+                        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=800&q=80&fit=crop"
+                            alt="Hair colour balayage" loading="lazy" />
+                    </div>
+                    <div class="service-detail-body">
+                        <h3>Hair Colour & Highlights</h3>
+                        <p>Balayage, ombre, global colour, highlights, and glossing. Using L'Oréal Professionnel and
+                            Wella for vibrant, long-lasting, damage-free colour.</p>
+                        <div class="price-row">
+                            <span class="price-badge">₹ 2,500 – ₹ 12,000</span>
+                            <a href="booking.html" class="btn btn-gold"
+                                style="padding: 10px 20px; font-size: 0.72rem;">Book →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail-card reveal">
+                    <div class="service-detail-img">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80&fit=crop"
+                            alt="Keratin smoothening treatment" loading="lazy" />
+                    </div>
+                    <div class="service-detail-body">
+                        <h3>Keratin & Smoothening</h3>
+                        <p>Brazilian keratin, Japanese straightening, and Cezanne smoothening treatments for silky,
+                            frizz-free hair lasting up to 6 months.</p>
+                        <div class="price-row">
+                            <span class="price-badge">₹ 4,500 – ₹ 14,000</span>
+                            <a href="booking.html" class="btn btn-gold"
+                                style="padding: 10px 20px; font-size: 0.72rem;">Book →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail-card reveal reveal-delay-1">
+                    <div class="service-detail-img">
+                        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=800&q=80&fit=crop"
+                            alt="Hair spa treatment" loading="lazy" />
+                    </div>
+                    <div class="service-detail-body">
+                        <h3>Hair Spa & Treatment</h3>
+                        <p>Deep conditioning, scalp therapy, and Kérastase hair rituals to restore shine, strength, and
+                            vitality to stressed or colour-treated hair.</p>
+                        <div class="price-row">
+                            <span class="price-badge">₹ 1,500 – ₹ 5,000</span>
+                            <a href="booking.html" class="btn btn-gold"
+                                style="padding: 10px 20px; font-size: 0.72rem;">Book →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKIN & WELLNESS ==================== -->
+    <section class="section-pad" style="background: var(--grey-100);">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">For Your Skin</span>
+                <h2 class="section-title">Skincare & <em>Wellness</em></h2>
+            </div>
+            <div class="service-detail-grid" style="margin-top: 40px;">
+
+                <div class="service-detail-card reveal">
+                    <div class="service-detail-img">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80&fit=crop"
+                            alt="Facial treatment" loading="lazy" />
+                    </div>
+                    <div class="service-detail-body">
+                        <h3>Signature Facials</h3>
+                        <p>Gold facial, brightening facial, anti-aging facial, and our signature Luxe Glow ritual.
+                            Customized to your skin type using Dermalogica's professional range.</p>
+                        <div class="price-row">
+                            <span class="price-badge">₹ 1,800 – ₹ 6,500</span>
+                            <a href="booking.html" class="btn btn-gold"
+                                style="padding: 10px 20px; font-size: 0.72rem;">Book →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail-card reveal reveal-delay-1">
+                    <div class="service-detail-img">
+                        <img src="https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?w=800&q=80&fit=crop"
+                            alt="Spa massage" loading="lazy" />
+                    </div>
+                    <div class="service-detail-body">
+                        <h3>Spa & Massage</h3>
+                        <p>Swedish relaxation massage, deep-tissue therapy, aromatherapy body wraps, and foot
+                            reflexology. Unwind with premium organic essential oils.</p>
+                        <div class="price-row">
+                            <span class="price-badge">₹ 3,500 – ₹ 9,000</span>
+                            <a href="booking.html" class="btn btn-gold"
+                                style="padding: 10px 20px; font-size: 0.72rem;">Book →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail-card reveal">
+                    <div class="service-detail-img">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80&fit=crop"
+                            alt="Makeup artist" loading="lazy" />
+                    </div>
+                    <div class="service-detail-body">
+                        <h3>Makeup & Grooming</h3>
+                        <p>Party makeup, editorial looks, HD airbrush makeup — for women. For men: beard shaping,
+                            grooming facials, and hair styling complete the package.</p>
+                        <div class="price-row">
+                            <span class="price-badge">₹ 2,800 – ₹ 8,500</span>
+                            <a href="booking.html" class="btn btn-gold"
+                                style="padding: 10px 20px; font-size: 0.72rem;">Book →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail-card reveal reveal-delay-1">
+                    <div class="service-detail-img">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80&fit=crop"
+                            alt="Nail spa" loading="lazy" />
+                    </div>
+                    <div class="service-detail-body">
+                        <h3>Nail Art & Extensions</h3>
+                        <p>Gel manicure, acrylics, French nails, nail art designs, and luxury spa pedicures using OPI
+                            and Gelish professional lines.</p>
+                        <div class="price-row">
+                            <span class="price-badge">₹ 800 – ₹ 4,500</span>
+                            <a href="booking.html" class="btn btn-gold"
+                                style="padding: 10px 20px; font-size: 0.72rem;">Book →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BRIDAL ==================== -->
+    <section class="section-pad" style="background: var(--black); position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; right: 0; width: 50%; height: 100%;">
+            <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1000&q=80&fit=crop"
+                alt="Bridal look at Luxe Studio" loading="lazy"
+                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.3;" />
+        </div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div style="max-width: 560px;">
+                <span class="section-label">Our Flagship Service</span>
+                <h2 class="section-title" style="color: var(--white);">The <em>Bridal</em> Studio</h2>
+                <p style="color: rgba(255,255,255,0.65); margin-bottom: 32px;">Your wedding day deserves absolute
+                    perfection. Our dedicated Bridal Studio offers pre-bridal packages, wedding-day packages, and
+                    complete bridal party services — from mehendi to makeup to saree draping.</p>
+                <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px;">
+                    <div
+                        style="display: flex; gap: 12px; align-items: center; color: rgba(255,255,255,0.75); font-size: 0.9rem;">
+                        <span style="color: var(--gold);">✦</span>
+                        <span>Pre-Bridal Glow Package (3-session course) — ₹ 12,000</span>
+                    </div>
+                    <div
+                        style="display: flex; gap: 12px; align-items: center; color: rgba(255,255,255,0.75); font-size: 0.9rem;">
+                        <span style="color: var(--gold);">✦</span>
+                        <span>Bridal Makeup + Hair + Saree Draping — ₹ 25,000</span>
+                    </div>
+                    <div
+                        style="display: flex; gap: 12px; align-items: center; color: rgba(255,255,255,0.75); font-size: 0.9rem;">
+                        <span style="color: var(--gold);">✦</span>
+                        <span>Full Wedding Package (Bride + 2 Bridesmaids) — ₹ 45,000</span>
+                    </div>
+                    <div
+                        style="display: flex; gap: 12px; align-items: center; color: rgba(255,255,255,0.75); font-size: 0.9rem;">
+                        <span style="color: var(--gold);">✦</span>
+                        <span>Mehendi Package (Artist Included) — ₹ 15,000</span>
+                    </div>
+                </div>
+                <a href="booking.html?service=bridal" class="btn btn-gold">Plan Your Bridal Experience →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING TABLE ==================== -->
+    <section class="section-pad" style="background: var(--white);">
+        <div class="container">
+            <div class="reveal text-center">
+                <span class="section-label">Service Menu</span>
+                <h2 class="section-title">Complete <em>Price Guide</em></h2>
+                <p class="section-subtitle">Transparent pricing with no hidden charges. All prices include GST.</p>
+            </div>
+            <div style="overflow-x: auto; margin-top: 40px;" class="reveal">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+                    <thead>
+                        <tr style="background: var(--black); color: var(--white);">
+                            <th
+                                style="padding: 16px 24px; text-align: left; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;">
+                                Service</th>
+                            <th
+                                style="padding: 16px 24px; text-align: left; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;">
+                                Category</th>
+                            <th
+                                style="padding: 16px 24px; text-align: left; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;">
+                                Duration</th>
+                            <th
+                                style="padding: 16px 24px; text-align: right; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: var(--gold);">
+                                Starting Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--grey-200);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Classic Haircut
+                                (Women)</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Hair</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">45 min</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 1,200</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--grey-200); background: var(--grey-100);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Classic Haircut (Men)
+                            </td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Hair</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">30 min</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 800</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--grey-200);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Balayage / Ombre</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Colour</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">3–4 hrs</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 6,500</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--grey-200); background: var(--grey-100);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Global Colour</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Colour</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">2–3 hrs</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 2,500</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--grey-200);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Keratin Treatment
+                            </td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Treatment</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">3–5 hrs</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 4,500</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--grey-200); background: var(--grey-100);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Signature Facial</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Skincare</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">60 min</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 1,800</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--grey-200);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Swedish Massage</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Spa</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">60–90 min</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 3,500</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--grey-200); background: var(--grey-100);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Nail Art (Gel)</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Nails</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">75 min</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 1,200</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--grey-200);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Party Makeup</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Makeup</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">90 min</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 2,800</td>
+                        </tr>
+                        <tr style="background: var(--grey-100);">
+                            <td style="padding: 16px 24px; color: var(--black); font-weight: 500;">Bridal Package (Full)
+                            </td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Bridal</td>
+                            <td style="padding: 16px 24px; color: var(--grey-400);">Full Day</td>
+                            <td
+                                style="padding: 16px 24px; text-align: right; font-family: var(--font-heading); color: var(--gold); font-size: 1rem;">
+                                ₹ 25,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center" style="margin-top: 32px;" class="reveal">
+                <a href="booking.html" class="btn btn-gold">Book Your Service Now →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-name">Luxe Studio</span>
+                        <span class="logo-tag">Premium Salon & Spa</span>
+                    </div>
+                    <p>India's most celebrated luxury salon chain. 12 cities. 120+ stylists. One standard: excellence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" title="Instagram">📸</a>
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="YouTube">▶</a>
+                        <a href="#" title="Pinterest">📌</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Our Services</h5>
+                    <ul>
+                        <li><a href="services.html">Hair Styling & Cuts</a></li>
+                        <li><a href="services.html">Hair Colour</a></li>
+                        <li><a href="services.html">Bridal Studio</a></li>
+                        <li><a href="services.html">Skin & Facials</a></li>
+                        <li><a href="services.html">Nail Art</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="index.html#story">Our Story</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#testimonials">Reviews</a></li>
+                        <li><a href="index.html#contact">Locations</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Franchise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h5>Stay in Touch</h5>
+                    <p>Get exclusive offers & seasonal promos.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address" />
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Luxe Studio India. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => document.getElementById('pageLoader').classList.add('hidden'), 800);
+        });
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileClose = document.getElementById('mobileClose');
+        hamburger.addEventListener('click', () => { mobileNav.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', closeMobileNav);
+        function closeMobileNav() { mobileNav.classList.remove('open'); document.body.style.overflow = ''; }
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.12 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

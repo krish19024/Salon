@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxe Studio | Premium Salon & Spa — India</title>
+  <meta name="description"
+    content="Luxe Studio is India's most refined luxury salon & spa. Hair, skincare, bridal, makeup, nails — experience artistry redefined. Book your appointment today." />
+  <meta property="og:title" content="Luxe Studio | Premium Salon & Spa" />
+  <meta property="og:description" content="Experience artistry redefined. India's most refined luxury salon & spa." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂</text></svg>" />
+  <!-- Iconify for icons -->
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">Luxe <span>Studio</span></div>
+  </div>
+
+  <!-- Sticky Book Now -->
+  <a href="booking.html" class="sticky-cta">
+    <button class="btn btn-gold">
+      ✦ Book Now
+    </button>
+  </a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header header-transparent" id="header">
+    <a href="index.html" class="logo">
+      <span class="logo-name">Luxe Studio</span>
+      <span class="logo-tag">Premium Salon & Spa</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="tel:+919876543210" class="btn btn-outline" style="padding:10px 22px; font-size: 0.72rem;">📞 +91 98765
+        43210</a>
+      <a href="booking.html" class="btn btn-gold" style="padding:10px 22px; font-size: 0.72rem;">Book Now</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" id="mobileClose">✕</span>
+    <a href="index.html" onclick="closeMobileNav()">Home</a>
+    <a href="services.html" onclick="closeMobileNav()">Services</a>
+    <a href="#portfolio" onclick="closeMobileNav()">Portfolio</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#testimonials" onclick="closeMobileNav()">Reviews</a>
+    <a href="#contact" onclick="closeMobileNav()">Locations</a>
+    <a href="booking.html" class="btn btn-gold" style="margin-top:12px;">Book Appointment</a>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1800&q=85&fit=crop"
+        alt="Luxury salon interior with gold and black decor" loading="eager" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-label">✦ Since 2008 · 12 Cities Across India ✦</span>
+      <h1>Where <em>Beauty</em><br>Finds Its Story</h1>
+      <p class="hero-desc">Indulge in expert artistry — from transformative haircuts & bridal couture to luminous
+        skincare. Curated for those who appreciate the finest.</p>
+      <div class="hero-btns">
+        <a href="booking.html" class="btn btn-gold">Book an Appointment →</a>
+        <a href="#portfolio" class="btn btn-outline" style="color: #fff; border-color: rgba(255,255,255,0.4);">View
+          Portfolio</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ==================== MARQUEE ==================== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Hair Styling</span><span class="dot">✦</span>
+      <span>Bridal Packages</span><span class="dot">✦</span>
+      <span>Skin Treatments</span><span class="dot">✦</span>
+      <span>Nail Art</span><span class="dot">✦</span>
+      <span>Makeup Studio</span><span class="dot">✦</span>
+      <span>Hair Color</span><span class="dot">✦</span>
+      <span>Keratin Therapy</span><span class="dot">✦</span>
+      <span>Spa & Relaxation</span><span class="dot">✦</span>
+      <!-- Repeat for seamless loop -->
+      <span>Hair Styling</span><span class="dot">✦</span>
+      <span>Bridal Packages</span><span class="dot">✦</span>
+      <span>Skin Treatments</span><span class="dot">✦</span>
+      <span>Nail Art</span><span class="dot">✦</span>
+      <span>Makeup Studio</span><span class="dot">✦</span>
+      <span>Hair Color</span><span class="dot">✦</span>
+      <span>Keratin Therapy</span><span class="dot">✦</span>
+      <span>Spa & Relaxation</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ==================== STATS ==================== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="15">0</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-number" data-count="12">0</div>
+          <div class="stat-label">Luxury Locations</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-number" data-count="50000">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-number" data-count="120">0</div>
+          <div class="stat-label">Expert Stylists</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES PREVIEW ==================== -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">Artistry for Every <em>Occasion</em></h2>
+        <p class="section-subtitle">From everyday elegance to grand celebrations — our expert team delivers
+          transformative results across every service category.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <span class="service-icon">✂</span>
+          <h3>Hair Styling & Cuts</h3>
+          <p>Precision cuts, styling, and finishing tailored to your face structure, lifestyle, and personality by
+            master stylists trained in Paris & London.</p>
+          <div class="service-price">From ₹ 1,200</div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-icon">🎨</span>
+          <h3>Hair Colour & Highlights</h3>
+          <p>Balayage, ombre, global colour, and glossing treatments using L'Oréal Professionnel and Wella premium
+            colour lines.</p>
+          <div class="service-price">From ₹ 2,500</div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-icon">👰</span>
+          <h3>Bridal Studio</h3>
+          <p>Complete bridal packages including mehendi, makeup, saree draping, and pre-bridal treatments. Your day,
+            perfected.</p>
+          <div class="service-price">From ₹ 18,000</div>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="service-icon">💆</span>
+          <h3>Skin & Facials</h3>
+          <p>Hydrafacials, gold facials, brightening peels, and anti-aging treatments using Dermalogica and VLCC
+            formulations.</p>
+          <div class="service-price">From ₹ 1,800</div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-icon">💅</span>
+          <h3>Nail Art & Extensions</h3>
+          <p>Gel extensions, nail art, French manicures, and spa pedicures. Curated designs for every mood and occasion.
+          </p>
+          <div class="service-price">From ₹ 800</div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-icon">🌿</span>
+          <h3>Spa & Wellness</h3>
+          <p>Aromatherapy massage, deep-tissue therapy, and full-body rituals with organic essential oils for complete
+            rejuvenation.</p>
+          <div class="service-price">From ₹ 3,500</div>
+        </div>
+
+      </div>
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="services.html" class="btn btn-outline" style="color: var(--black); border-color: var(--black);">Explore
+          All Services →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO ==================== -->
+  <section class="portfolio section-pad" id="portfolio">
+    <div class="container">
+      <div class="portfolio-header reveal">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">The Art We <em>Create</em></h2>
+        <p class="section-subtitle">Real looks from real clients. Every transformation is a story of confidence and
+          beauty.</p>
+      </div>
+
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">All Looks</button>
+        <button class="filter-btn" data-filter="hair">Hair</button>
+        <button class="filter-btn" data-filter="makeup">Makeup</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="nails">Nails</button>
+        <button class="filter-btn" data-filter="skincare">Skincare</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-item wide" data-cat="hair">
+          <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=1200&q=80&fit=crop"
+            alt="Hair transformation - balayage" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h4>Balayage Perfection</h4>
+            <span>Hair Colour</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="bridal">
+          <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=80&fit=crop&crop=top"
+            alt="Bridal makeup look" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h4>Bridal Radiance</h4>
+            <span>Bridal Makeup</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="hair">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80&fit=crop"
+            alt="Precision haircut" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h4>Sculptured Cut</h4>
+            <span>Hair Styling</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="makeup">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80&fit=crop"
+            alt="Luxury makeup" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h4>Evening Glow</h4>
+            <span>Makeup Studio</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item wide" data-cat="bridal">
+          <img src="https://picsum.photos/seed/royalbridal22/1200/700" alt="Indian bridal look" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h4>Royal Bridal</h4>
+            <span>Bridal Package</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="nails">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80&fit=crop"
+            alt="Nail art design" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h4>Artisan Nail Art</h4>
+            <span>Nails & Extensions</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="skincare">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80&fit=crop"
+            alt="Facial skincare treatment" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h4>Hydra Glow Facial</h4>
+            <span>Skincare</span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="hair">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80&fit=crop"
+            alt="Salon styling" loading="lazy" />
+          <div class="portfolio-overlay">
+            <h4>Sleek & Shine</h4>
+            <span>Hair Styling</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE US ==================== -->
+  <section class="why section-pad" id="about">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-img reveal">
+          <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=900&q=80&fit=crop"
+            alt="Luxe Studio salon interior" loading="lazy" />
+          <div class="why-img-badge">
+            <span class="badge-num">15+</span>
+            <span class="badge-text">Years of Trust</span>
+          </div>
+        </div>
+        <div class="why-content reveal reveal-delay-1">
+          <span class="section-label">Why Choose Luxe Studio</span>
+          <h2 class="section-title">Craftsmanship.<br><em>Confidence.</em> Care.</h2>
+          <p>We are not just a salon — we are a sanctuary for self-expression. Every visit is a curated experience
+            shaped by expertise, premium products, and genuine warmth.</p>
+          <div class="why-items">
+            <div class="why-item">
+              <div class="why-item-icon">🏅</div>
+              <div class="why-item-text">
+                <h4>Award-Winning Stylists</h4>
+                <p>Our team has trained at TONI&GUY and Vidal Sassoon academies across Europe. 120+ certified experts at
+                  your service.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon">🌿</div>
+              <div class="why-item-text">
+                <h4>100% Premium Products</h4>
+                <p>Only international-grade, cruelty-free products: Wella, Schwarzkopf, Dermalogica, OPI. No
+                  compromises.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon">✨</div>
+              <div class="why-item-text">
+                <h4>Hygienic & Luxurious Spaces</h4>
+                <p>Spa-grade hygiene protocols, sanitized tools for every client, and premium salon amenities in all 12
+                  locations.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon">📱</div>
+              <div class="why-item-text">
+                <h4>Seamless Online Booking</h4>
+                <p>Book in under 60 seconds, get reminders, rebook easily — because your time is precious.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT STRIP ==================== -->
+  <section class="about-strip section-pad-sm" id="story">
+    <div class="container">
+      <div class="about-strip-grid">
+        <div class="about-images reveal">
+          <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=1000&q=80&fit=crop"
+            alt="Luxe Studio founders and team" loading="lazy" />
+          <img src="https://picsum.photos/seed/salonteam99/600/500" alt="Salon team" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=80&fit=crop"
+            alt="Stylist at work" loading="lazy" />
+        </div>
+        <div class="reveal reveal-delay-1">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Born in Mumbai,<br><em>Loved</em> Across India</h2>
+          <p style="margin-bottom: 20px;">Founded in 2008 by Priya Sharma, Luxe Studio began as a single boutique salon
+            in Bandra, Mumbai. With a vision rooted in artistry and a commitment to making every Indian feel like
+            royalty, we grew — one happy client at a time.</p>
+          <p style="margin-bottom: 32px;">Today, we operate 12 premium locations across Mumbai, Delhi, Bangalore, Pune,
+            Hyderabad, Chennai, and Ahmedabad — each a blend of local culture and global aesthetics.</p>
+          <a href="#contact" class="btn btn-gold">Find A Studio Near You →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <span class="section-label">Client Stories</span>
+        <h2 class="section-title">Words from Our <em>Beloved</em> Clients</h2>
+        <p class="section-subtitle">Over 50,000 transformations and counting. Here is what our clients say.</p>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testi-card featured reveal">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testi-text">"Luxe Studio gave me the most beautiful bridal look I could have ever imagined. Meera
+            and her team worked for 5 hours perfecting every detail — from my lehenga hairstyle to the dewy glow. I felt
+            like an absolute queen on my wedding day."</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=200&q=80&fit=crop&crop=face"
+              alt="Aisha Kapoor" loading="lazy" />
+            <div>
+              <div class="testi-author-name" style="color: #fff;">Aisha Kapoor</div>
+              <div class="testi-author-role">Bridal Client, Mumbai</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal-delay-1">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testi-text">"The balayage I got at Luxe Studio Bangalore has been the best colour of my life.
+            Everyone notices. The stylist truly understood what I wanted and delivered beyond expectations."</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200&q=80&fit=crop&crop=face"
+              alt="Sneha Rajan" loading="lazy" />
+            <div>
+              <div class="testi-author-name">Sneha Rajan</div>
+              <div class="testi-author-role">Hair Client, Bangalore</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal-delay-2">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testi-text">"I've been getting my monthly haircuts and facials here for 3 years. The consistency,
+            professionalism, and the sheer luxury of the space keep me coming back every single time."</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&q=80&fit=crop&crop=face"
+              alt="Rohit Malhotra" loading="lazy" />
+            <div>
+              <div class="testi-author-name">Rohit Malhotra</div>
+              <div class="testi-author-role">Regular Client, Delhi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testi-text">"The HydraFacial at Luxe Studio is simply unmatched. My skin has never felt more alive.
+            Highly trained therapists, premium products — this is what self-care should feel like."</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=200&q=80&fit=crop&crop=face"
+              alt="Divya Nair" loading="lazy" />
+            <div>
+              <div class="testi-author-name">Divya Nair</div>
+              <div class="testi-author-role">Skincare Client, Pune</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal-delay-1">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <p class="testi-text">"Amazing nail art designs and their keratin treatment transformed my hair completely.
+            The online booking is super easy and they always send reminders. 10/10 experience."</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?w=200&q=80&fit=crop&crop=face"
+              alt="Preethi Subramaniam" loading="lazy" />
+            <div>
+              <div class="testi-author-name">Preethi Subramaniam</div>
+              <div class="testi-author-role">Regular Client, Chennai</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="text-center" style="margin-top: 56px;" class="reveal">
+        <div
+          style="display: inline-flex; align-items: center; gap: 32px; background: var(--grey-100); padding: 20px 40px; border-radius: 100px; flex-wrap: wrap; justify-content: center;"
+          class="reveal">
+          <div style="text-align: center;">
+            <div style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--gold);">4.9★</div>
+            <div style="font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--grey-400);">
+              Google Rating</div>
+          </div>
+          <div style="width: 1px; height: 36px; background: var(--grey-200);"></div>
+          <div style="text-align: center;">
+            <div style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--gold);">50K+</div>
+            <div style="font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--grey-400);">
+              Happy Clients</div>
+          </div>
+          <div style="width: 1px; height: 36px; background: var(--grey-200);"></div>
+          <div style="text-align: center;">
+            <div style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--gold);">12</div>
+            <div style="font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--grey-400);">
+              Locations</div>
+          </div>
+          <div style="width: 1px; height: 36px; background: var(--grey-200);"></div>
+          <div style="text-align: center;">
+            <div style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--gold);">100%</div>
+            <div style="font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--grey-400);">
+              Premium Products</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BRANDS ==================== -->
+  <section class="brands">
+    <div class="container">
+      <div class="brands-header reveal">
+        <span class="section-label">Trusted Partners</span>
+        <h2 class="section-title">Brands We <em>Believe In</em></h2>
+      </div>
+      <div class="brands-track">
+        <div class="brand-item reveal">
+          <div class="brand-name">L'Oréal Professionnel</div>
+        </div>
+        <div class="brand-item reveal reveal-delay-1">
+          <div class="brand-name">Wella</div>
+        </div>
+        <div class="brand-item reveal reveal-delay-2">
+          <div class="brand-name">Schwarzkopf</div>
+        </div>
+        <div class="brand-item reveal reveal-delay-1">
+          <div class="brand-name">Dermalogica</div>
+        </div>
+        <div class="brand-item reveal reveal-delay-2">
+          <div class="brand-name">OPI</div>
+        </div>
+        <div class="brand-item reveal reveal-delay-3">
+          <div class="brand-name">Kerastase</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BOOKING ==================== -->
+  <section class="booking section-pad" id="booking">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info reveal">
+          <span class="section-label">Online Booking</span>
+          <h2 class="section-title">Reserve Your<br><em>Experience</em></h2>
+          <p>Skip the wait. Book your appointment online in under a minute, choose your service and stylist, and arrive
+            ready to be transformed.</p>
+          <div class="booking-features">
+            <div class="booking-feature">
+              <span>✓</span>
+              <span>Instant confirmation via SMS & Email</span>
+            </div>
+            <div class="booking-feature">
+              <span>✓</span>
+              <span>Choose your preferred stylist</span>
+            </div>
+            <div class="booking-feature">
+              <span>✓</span>
+              <span>Flexible rescheduling up to 2 hours before</span>
+            </div>
+            <div class="booking-feature">
+              <span>✓</span>
+              <span>Available at all 12 studio locations</span>
+            </div>
+            <div class="booking-feature">
+              <span>✓</span>
+              <span>Real-time slot availability</span>
+            </div>
+          </div>
+          <div style="margin-top: 40px;">
+            <a href="tel:+919876543210" class="btn btn-outline"
+              style="color: white; border-color: rgba(255,255,255,0.3);">📞 Or Call Us Directly</a>
+          </div>
+        </div>
+
+        <div class="booking-form reveal reveal-delay-1">
+          <h3>Book an Appointment</h3>
+          <form id="bookingForm" onsubmit="handleBooking(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Priya" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Kapoor" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="location">Studio Location</label>
+              <select id="location" name="location" required>
+                <option value="">— Select Location —</option>
+                <option value="bandra">Mumbai — Bandra West</option>
+                <option value="lower-parel">Mumbai — Lower Parel</option>
+                <option value="cp">Delhi — Connaught Place</option>
+                <option value="koramangala">Bangalore — Koramangala</option>
+                <option value="koregaon">Pune — Koregaon Park</option>
+                <option value="jubilee">Hyderabad — Jubilee Hills</option>
+                <option value="nungambakkam">Chennai — Nungambakkam</option>
+                <option value="cg-road">Ahmedabad — CG Road</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">— Choose a Service —</option>
+                <option value="haircut">Hair Cut & Styling</option>
+                <option value="colour">Hair Colour & Highlights</option>
+                <option value="bridal">Bridal Package</option>
+                <option value="facial">Skin & Facial Treatment</option>
+                <option value="nails">Nail Art & Extensions</option>
+                <option value="spa">Spa & Wellness</option>
+                <option value="keratin">Keratin / Smoothening</option>
+                <option value="makeup">Makeup Studio</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <select id="time" name="time" required>
+                  <option value="">— Select Time —</option>
+                  <option value="10:00">10:00 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="15:00">3:00 PM</option>
+                  <option value="16:00">4:00 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="notes">Special Requests (Optional)</label>
+              <textarea id="notes" name="notes"
+                placeholder="Any allergies, preferences, or special requests..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" id="submitBtn">Confirm Appointment →</button>
+          </form>
+          <div id="bookingSuccess" style="display:none; text-align:center; padding: 32px 0;">
+            <div style="font-size: 3rem; margin-bottom: 16px;">✓</div>
+            <h4 style="font-size: 1.4rem; margin-bottom: 8px; color: var(--black);">Appointment Confirmed!</h4>
+            <p style="color: var(--grey-600);">We'll send a confirmation SMS & email within 5 minutes. See you soon! ✨
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INSTAGRAM ==================== -->
+  <section class="instagram">
+    <div class="container">
+      <div class="instagram-header reveal">
+        <span class="section-label">Follow Our Story</span>
+        <h2 class="section-title">We're on <em>Instagram</em></h2>
+        <p class="section-subtitle">@luxestudio.india — Follow us for daily style inspiration, tutorials &
+          behind-the-scenes salon magic.</p>
+      </div>
+      <div class="instagram-grid reveal">
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&q=80&fit=crop"
+            alt="Instagram post" loading="lazy" />
+          <div class="insta-hover">📷</div>
+        </div>
+        <div class="insta-item">
+          <img src="https://picsum.photos/seed/instapost2/400/400" alt="Instagram post" loading="lazy" />
+          <div class="insta-hover">📷</div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80&fit=crop"
+            alt="Instagram post" loading="lazy" />
+          <div class="insta-hover">📷</div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80&fit=crop"
+            alt="Instagram post" loading="lazy" />
+          <div class="insta-hover">📷</div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&q=80&fit=crop"
+            alt="Instagram post" loading="lazy" />
+          <div class="insta-hover">📷</div>
+        </div>
+        <div class="insta-item">
+          <img src="https://picsum.photos/seed/instapost6/400/400" alt="Instagram post" loading="lazy" />
+          <div class="insta-hover">📷</div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 32px;">
+        <a href="https://instagram.com" target="_blank" class="btn btn-outline"
+          style="color: var(--black); border-color: var(--grey-200);">View Instagram Feed →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="section-label">Find Us</span>
+          <h2 class="section-title">Visit a Studio <em>Near You</em></h2>
+          <p>12 premium locations across India, each designed to offer the same world-class Luxe Studio experience.</p>
+          <div class="contact-items" style="margin-top: 36px;">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Flagship Studio</h4>
+                <p>14, Turner Road, Bandra West, Mumbai — 400050</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4>Phone & WhatsApp</h4>
+                <p><a href="tel:+919876543210" style="color: var(--gold);">+91 98765 43210</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email Us</h4>
+                <p><a href="mailto:hello@luxestudio.in" style="color: var(--gold);">hello@luxestudio.in</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <h4>Opening Hours</h4>
+                <p>Mon–Sat: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Instagram">📸</a>
+            <a href="#" class="social-link" title="Facebook">📘</a>
+            <a href="#" class="social-link" title="YouTube">▶</a>
+            <a href="#" class="social-link" title="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="contact-map reveal reveal-delay-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4968!2d72.83!3d19.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAzJzM2LjAiTiA3MsKwNDknNDguMCJF!5e0!3m2!1sen!2sin!4v1677654321876!5m2!1sen!2sin"
+            loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+            title="Luxe Studio Bandra location map" style="filter: grayscale(1) contrast(1.1);"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-name">Luxe Studio</span>
+            <span class="logo-tag">Premium Salon & Spa</span>
+          </div>
+          <p>India's most celebrated luxury salon chain — where artistry meets authenticity. 12 cities. 120+ stylists.
+            One standard: excellence.</p>
+          <div class="footer-social">
+            <a href="#" title="Instagram">📸</a>
+            <a href="#" title="Facebook">📘</a>
+            <a href="#" title="YouTube">▶</a>
+            <a href="#" title="Pinterest">📌</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Our Services</h5>
+          <ul>
+            <li><a href="services.html">Hair Styling & Cuts</a></li>
+            <li><a href="services.html">Hair Colour</a></li>
+            <li><a href="services.html">Bridal Studio</a></li>
+            <li><a href="services.html">Skin & Facials</a></li>
+            <li><a href="services.html">Nail Art</a></li>
+            <li><a href="services.html">Spa & Wellness</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Locations</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Franchise</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h5>Stay in Touch</h5>
+          <p>Get exclusive offers, style tips, and seasonal promos. No spam, just beauty.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" />
+            <button>→</button>
+          </div>
+          <div style="margin-top: 20px;">
+            <p style="color: rgba(255,255,255,0.4); font-size: 0.8rem; margin-bottom: 8px;">We Accept</p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span
+                style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.72rem; color: rgba(255,255,255,0.6);">UPI</span>
+              <span
+                style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.72rem; color: rgba(255,255,255,0.6);">Cards</span>
+              <span
+                style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.72rem; color: rgba(255,255,255,0.6);">Cash</span>
+              <span
+                style="background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 0.72rem; color: rgba(255,255,255,0.6);">EMI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Luxe Studio India. All Rights Reserved. CIN: U93090MH2008PTC123456</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // ---- Page Loader ----
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('pageLoader').classList.add('hidden');
+      }, 800);
+    });
+
+    // ---- Sticky Header ----
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        header.classList.add('scrolled');
+        header.classList.remove('header-transparent');
+      } else {
+        header.classList.remove('scrolled');
+        header.classList.add('header-transparent');
+      }
+    });
+
+    // ---- Mobile Nav ----
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileClose = document.getElementById('mobileClose');
+
+    hamburger.addEventListener('click', () => {
+      mobileNav.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+    mobileClose.addEventListener('click', closeMobileNav);
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // ---- Scroll Reveal ----
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // ---- Counter Animations ----
+    const counters = document.querySelectorAll('[data-count]');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-count'));
+          const duration = 2000;
+          const increment = target / (duration / 16);
+          let current = 0;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+            el.textContent = target >= 1000
+              ? Math.floor(current).toLocaleString('en-IN') + '+'
+              : Math.floor(current) + '+';
+          }, 16);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(el => counterObserver.observe(el));
+
+    // ---- Portfolio Filter ----
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        portfolioItems.forEach(item => {
+          const cat = item.getAttribute('data-cat');
+          if (filter === 'all' || cat === filter) {
+            item.style.display = '';
+            item.style.opacity = '0';
+            setTimeout(() => { item.style.opacity = '1'; }, 50);
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // ---- Portfolio transitions ----
+    portfolioItems.forEach(item => {
+      item.style.transition = 'opacity 0.4s ease';
+    });
+
+    // ---- Booking Form ----
+    function handleBooking(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = 'Confirming...';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('bookingForm').style.display = 'none';
+        document.getElementById('bookingSuccess').style.display = 'block';
+      }, 1200);
+    }
+
+    // ---- Set min date for booking ----
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const dd = String(today.getDate()).padStart(2, '0');
+      dateInput.min = `${yyyy}-${mm}-${dd}`;
+    }
+  </script>
+
+</body>
+
+</html>
